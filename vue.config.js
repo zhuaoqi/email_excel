@@ -3,7 +3,7 @@
  * @Author: zhuaoqi
  * @Date: 2022-09-10 22:17:45
  * @LastEditors: zhuaoqi
- * @LastEditTime: 2022-09-11 12:51:09
+ * @LastEditTime: 2022-09-11 13:14:23
  */
 module.exports = {
   publicPath: "./",
@@ -23,6 +23,15 @@ module.exports = {
             {
               target: "nsis", // 利用nsis制作安装程序
               arch: ["x64"], // 64位和32位都打包
+            },
+          ],
+        },
+        mac: {
+          icon: "./public/favicon.ico",
+          target: [
+            {
+              target: "dmg",
+              arch: ["x64"],
             },
           ],
         },
